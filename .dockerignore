@@ -1,0 +1,33 @@
+# Version control
+.git/
+.gitignore
+
+# Python compilation and environment
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+venv/
+.venv/
+env/
+
+# Secrets & Local Config
+.env
+.env.*
+!.env.example
+
+# Data state (database is seeded on startup or mounted via volume)
+data/*.db
+
+# Documentation & Developer Tooling
+README.md
+Makefile
+tests/
+.pytest_cache/
+
+# IDE & OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.log

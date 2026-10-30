@@ -1,0 +1,24 @@
+version: "3.8"
+
+services:
+  text2sql-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: text2sql_enterprise_engine
+    restart: unless-stopped
+    ports:
+      - "8502:8502"
+    environment:
+      - GOOGLE_API_KEY=${GOOGLE_API_KEY}
+      - DATABASE_URL=sqlite:///data/enterprise.db
+      - MODEL_NAME=gemini-2.5-flash
+      - LOG_LEVEL=INFO
+    volumes:
+      - ./data:/app/data
+    healthcheck:
+      test: ["CMD", "curl", "--fail", "http://localhost:8502/_stcore/health"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 10s
