@@ -12,6 +12,10 @@ An enterprise-grade Natural Language to SQL engine designed to translate complex
 
 Built around a **5-stage defense-in-depth pipeline**, the engine uses deterministic Abstract Syntax Tree (AST) query validation, connection sandboxing, and dynamic schema inspection to block SQL injections, prevent schema hallucinations, and eliminate destructive DDL/DML operations before execution.
 
+/home/deepanshu/Downloads/2/text2sql-engine/images/demo-1.png
+
+/home/deepanshu/Downloads/2/text2sql-engine/images/demo-2.png
+
 ---
 
 ## 🏗️ Architectural Decisions & Integrity Guarantees
