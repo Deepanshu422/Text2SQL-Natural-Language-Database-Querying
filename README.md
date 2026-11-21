@@ -8,6 +8,10 @@
 ![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
 
+[![Live Demo](https://img.shields.io/badge/Live_Demo-Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)](https://text2sql-natural-language-database-querying.streamlit.app/)
+
+> 🚀 **[Try the Live Demo →](https://text2sql-natural-language-database-querying.streamlit.app/)**
+
 An enterprise-grade Natural Language to SQL engine designed to translate complex business queries into validated database statements. 
 
 Built around a **5-stage defense-in-depth pipeline**, the engine uses deterministic Abstract Syntax Tree (AST) query validation, connection sandboxing, and dynamic schema inspection to block SQL injections, prevent schema hallucinations, and eliminate destructive DDL/DML operations before execution.
