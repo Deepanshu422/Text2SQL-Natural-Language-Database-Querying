@@ -23,9 +23,11 @@ class DatabaseManager:
 
             # check db file exists or not
             if not settings.db_path.exists():
-                raise FileNotFoundError(
-                    f"Database not found at {settings.db_path}. Run `python scripts/init_db.py` first."
-                )
+                # raise FileNotFoundError(
+                #     f"Database not found at {settings.db_path}. Run `python scripts/init_db.py` first."
+                # )
+                from scripts.init_db import init_database
+                init_database()
 
             # use sqlite read-only URI
             ro_url = f"sqlite:///file:{settings.db_path}?mode=ro&uri=true"
